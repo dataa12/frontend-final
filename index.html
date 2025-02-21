@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <section class="modal-s">
+        <div  id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <form action="submit" id="form">
+                    <h1>Authorization</h1>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Email"> <br>
+                    <p class="email-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="mobile-number" style="margin-top: 10px;">Mobile Number</label> <br>
+                    <input type="text" name="mobile-number" id="mobile-number" placeholder="number"> <br>
+                    <p class="mobile-number-error"  style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="password" style="margin-top: 10px;">Password</label> <br>
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+                    </div>
+                    <p class="password-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <button id="login" style="margin-top: 10px;" type="submit" >Log in</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="main-section">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li>
+                            <a href="" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="pages/explore.html">Explore</a>
+                        </li>
+                        <button type="button" class="loginBtn">Log in</button>
+                    </ul>
+                </nav>
+
+                <div class="burger-bar" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="burger-bar-dropdown" id="mobileMenu">
+                <ul>
+                    <li>
+                        <a href="" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/explore.html">Explore</a>
+                    </li>
+                    <button type="button" class="loginBtnMobile">Log in</button>
+                </ul>
+            </div>
+        </header>
+        <section class="s-1">
+            <div class="container">
+                <div class="container-wrapper">
+                    <h3>Liberty NFT Market</h3>
+                    <h1>CREATE, SELL & <br> COLLECT TOP NFT’S.</h1>
+                    <p>
+                        Liberty NFT Market is a really cool and professional
+                         design for your NFT websites. This HTML CSS template 
+                         is based on Bootstrap v5 and it is designed for NFT related web portals. 
+                         Liberty can be freely downloaded from TemplateMo's
+                          free css templates.
+                    </p>
+                    <div class="button-wrapper">
+                        <button><a href="pages/explore.html">Explore Top NFTs</a></button>
+                        <button><a href="https://www.youtube.com/templatemo">Watch Our Videos</a></button>
+                    </div>
+                </div>
+                <img src="images/banner-1.png" alt="banner image">
+    
+            </div>
+        </section>
+    
+    </section>
+
+ 
+    <section class="s-2">
+        <div class="line"></div>
+        <div>
+            <h2>Browse Through Our <span>Categories</span> Here.</h2>
+        </div>
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="circle">
+                    <img src="images/icon-1.png" alt="icon">
+                </div>
+                <h5>Blockchain</h5>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="images/icon-2.png" alt="icon">
+                </div>
+                <h5>Digital Art</h5>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="images/icon-3.png" alt="icon">
+                </div>
+                <h5>Music art</h5>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="images/icon-4.png" alt="icon">
+                </div>
+                <h5>Virtual World</h5>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="images/icon-5.png" alt="icon">
+                </div>
+                <h5>Valuable</h5>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <img src="images/icon-6.png" alt="icon">
+                </div>
+                <h5>Triple NFT</h5>
+            </div>
+        </div>
+
+        <div class="line-2"></div>
+        <div class="title-2">
+            <h2>Explore Some Hot  <span>Collections </span>In Market.</h2>
+        </div>
+
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper collection-cards-wrapper">
+                <div class="swiper-slide card">
+                    <img src="images/collection-01.jpg" alt="collection image">
+                    <div class="card-info">
+                        <div class="card-info-text">
+                            <h4>Mutant Bored Ape Yacht Club</h4>
+                            <hr>
+                            <div>
+                                <p>Items in Collection: <br><span>324/324</span></p>
+                                <p>Category: <br> <span>Digital crypto</span></p> 
+                            </div>
+                        </div>
+                        <button><a href="">Explore Mutant</a></button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="images/collection-01.jpg" alt="collection image">
+                    <div class="card-info">
+                        <div class="card-info-text">
+                            <h4>Mutant Bored Ape Yacht Club</h4>
+                            <hr>
+                            <div>
+                                <p>Items in Collection: <br><span>324/324</span></p>
+                                <p>Category: <br> <span>Digital crypto</span></p> 
+                            </div>
+                        </div>
+                        <button><a href="">Explore Mutant</a></button>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <img src="images/collection-01.jpg" alt="collection image">
+                    <div class="card-info">
+                        <div class="card-info-text">
+                            <h4>Mutant Bored Ape Yacht Club</h4>
+                            <hr>
+                            <div>
+                                <p>Items in Collection: <br><span>324/324</span></p>
+                                <p>Category: <br> <span>Digital crypto</span></p> 
+                            </div>
+                        </div>
+                        <button><a href="">Explore Mutant</a></button>
+                    </div>
+                </div>
+                
+                
+            </div>     
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="s-3">
+        <div class="container">
+            <div class="left-block">
+                <div class="line-3"></div>
+                <h1>Create Your NFT & Put It On The Market.</h1>
+            </div>
+            <div class="right-block">
+                <button><a href="./pages/create.html"> Create Your NFT Now</a></button>
+            </div>
+
+        </div>
+
+        <div class="cards-wrapper-2">
+            <div class="cards">
+                <div class="circle">
+                    <img src="images/icon-2.png" alt="icon">
+                </div>
+                <h3>Set Up Your Wallet</h3>
+                <p>NFT means Non-Fungible Token that are used in 
+                    digital cryptocurrency markets. There are many
+                     different kinds of NFTs in the industry.</p>
+            </div>
+            <div>
+                <div class="number">1</div>
+                <div class="line"></div>
+            </div>
+            <div class="cards">
+                <div class="circle">
+                    <img src="images/icon-5.png" alt="icon">
+                </div>
+                <h3>Add Your Digital NFT</h3>
+                <p>There are 5 different HTML pages included 
+                    in this NFT <a href="" style="color: rgb(83, 186, 255);"> website template.</a> You can edit or
+                     modify any section on any page as you required.</p>
+            </div>
+            <div>
+                <div class="number">2</div>
+                <div class="line"></div>
+            </div>
+            <div class="cards">
+                <div class="circle">
+                    <img src="images/icon-6.png" alt="icon">
+                </div>
+                <h3>Sell Your NFT & Make Profit  </h3>
+                <p>If you would like to support our 
+                    TemplateMo website, please visit <a href="" style="color: rgb(83, 186, 255);">our contact page</a>
+                     to make a PayPal contribution. Thank you.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <img src="images/logo.png" alt=" logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Odio, quas quo quasi, asperiores magni possimus repellendus 
+                    architecto consequatur </p>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li>Useful Links <i class="fa-solid fa-angle-down"></i></li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+                <ul>
+                    <li>Privacy <i class="fa-solid fa-angle-down"></i></li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+                <ul>
+                    <li>Contact Info <i class="fa-solid fa-angle-down"></i></li>
+                    <li>
+                        <a href="mailto:someone@gmail.com"><i class="fa-solid fa-envelope-open"></i>davit.charkviani.1@btu.edu.ge</a> 
+                    </li>
+                    <li>
+                        <a href="tel:+995 32 222 222"><i class="fa-solid fa-phone"></i>+995 32 222 222</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Rustaveli+St,+Borzhomi/@41.8471048,43.3939202,17z/data=!3m1!4b1!4m9!1m2!2m1!1srustaveli+st!3m5!1s0x40433996826566bb:0x7a5ec012ead814f!8m2!3d41.8471009!4d43.3981474!15sCgxydXN0YXZlbGkgc3SSAQVyb3V0ZQ">
+                            <i class="fa-solid fa-location-dot"></i>Rustaveli st3. 12</a>
+                    </li>
+                </ul>
+            </div>
+
+           
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./app.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script> 
+</body>
+</html>

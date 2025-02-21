@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="modal-s">
+        <div  id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <form action="submit" id="form">
+                    <h1>Authorization</h1>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Email"> <br>
+                    <p class="email-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="mobile-number" style="margin-top: 10px;">Mobile Number</label> <br>
+                    <input type="text" name="mobile-number" id="mobile-number" placeholder="number"> <br>
+                    <p class="mobile-number-error"  style="color: red; height: 25px; font-size: 16px;"></p>
+                    <label for="password" style="margin-top: 10px;">Password</label> <br>
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+                    </div>
+                    <p class="password-error" style="color: red; height: 25px; font-size: 16px;"></p>
+                    <button id="login" style="margin-top: 10px;" type="submit" >Log in</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="header-section">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../pages/explore.html" class="active">Explore</a>
+                        </li>
+                        
+                        <button type="submit" class="loginBtn">Log in</button>
+                    </ul>
+                </nav>
+                <div class="burger-bar" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="burger-bar-dropdown" id="mobileMenu">
+                <ul>
+                    <li>
+                        <a href="../index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore</a>
+                    </li>
+                    <button type="button" class="loginBtnMobile">Log in</button>
+                </ul>
+            </div>
+        </header>
+        <div class="titles">
+            <h4>Liberty NFT Market</h4>
+            <h1>DISCOVER SOME TOP ITEMS</h1>
+            <p><span>Home > </span>Explore</p>
+        </div>
+    </section>
+
+
+    <section class="images-section">
+            <div class="image-wrapper">
+                <div class="card">
+                    <img src="../images/feautred-01.jpg" alt="image">
+                    <div class="artist-box">
+                        <h5>Triple Mutant Ape</h5>
+                        <div>
+                            <img src="../images/author.jpg" alt="Author Image">
+                            <p>Liberty Artist <br><span>@libertyart</span></p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/feautred-02.jpg" alt="image">
+                    <div class="artist-box">
+                        <h5>Triple Mutant Ape</h5>
+                        <div>
+                            <img src="../images/author.jpg" alt="Author Image">
+                            <p>Liberty Artist <br><span>@libertyart</span></p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/feautred-03.jpg" alt="image">
+                    <div class="artist-box">
+                        <h5>Triple Mutant Ape</h5>
+                        <div>
+                            <img src="../images/author.jpg" alt="Author Image">
+                            <p>Liberty Artist <br><span>@libertyart</span></p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="top-sellers-container">
+                <div>
+                    <div class="sellers-header">
+                    <div class="line"></div>
+                    <h4>Our Top Sellers This Week.</h4>
+                </div>
+                <div id="items-list"></div>
+                
+            </div>
+
+        </div>
+            
+
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <img src="../images/logo.png" alt=" logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Odio, quas quo quasi, asperiores magni possimus repellendus 
+                    architecto consequatur </p>
+            </div>
+
+            <div class="footer-list">
+                <ul>
+                    <li>Useful Links <i class="fa-solid fa-angle-down"></i></li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+                <ul>
+                    <li>Privacy <i class="fa-solid fa-angle-down"></i></li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+                <ul>
+                    <li>Contact Info <i class="fa-solid fa-angle-down"></i></li>
+                    <li>
+                        <a href="mailto:someone@gmail.com"><i class="fa-solid fa-envelope-open"></i>davit.charkviani.1@btu.edu.ge</a> 
+                    </li>
+                    <li>
+                        <a href="tel:+995 32 222 222"><i class="fa-solid fa-phone"></i>+995 32 222 222</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Rustaveli+St,+Borzhomi/@41.8471048,43.3939202,17z/data=!3m1!4b1!4m9!1m2!2m1!1srustaveli+st!3m5!1s0x40433996826566bb:0x7a5ec012ead814f!8m2!3d41.8471009!4d43.3981474!15sCgxydXN0YXZlbGkgc3SSAQVyb3V0ZQ">
+                            <i class="fa-solid fa-location-dot"></i>Rustaveli st3. 12</a>
+                    </li>
+                </ul>
+            </div>
+
+           
+        </div>
+        
+    </footer>
+
+    <script src="../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
